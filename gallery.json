@@ -1,6 +1,6 @@
 {
   "saqrgallery": 1,
-  "updated": 1795598130306,
+  "updated": 1795668788763,
   "entries": [
     {
       "id": "flask",
@@ -229,6 +229,292 @@
           }
         ]
       }
+    },
+    {
+      "id": "ar-bug-hunter",
+      "name": "Arabic bug hunter",
+      "nameAr": "صائد الأخطاء",
+      "description": "مهارة تصحيح: تعيد إنتاج العطل، تعزل السبب الجذري، تصلحه بأصغر تعديل وتثبته باختبار",
+      "author": "فريق صقر كود",
+      "tags": [
+        "تصحيح",
+        "أخطاء",
+        "اختبار"
+      ],
+      "version": "1.0.0",
+      "skills": 1,
+      "permissions": [
+        "list_files",
+        "read_file",
+        "search",
+        "project_search",
+        "git_diff",
+        "git_log",
+        "edit_file",
+        "run_tests",
+        "run_command"
+      ],
+      "changelogUrl": "https://github.com/CTO-DRS/saqr-gallery/blob/main/CHANGELOG.md",
+      "pack": {
+        "saqrpack": 2,
+        "id": "ar-bug-hunter",
+        "name": "Arabic bug hunter",
+        "nameAr": "صائد الأخطاء",
+        "description": "مهارة تصحيح: تعيد إنتاج العطل، تعزل السبب الجذري، تصلحه بأصغر تعديل وتثبته باختبار",
+        "template": "",
+        "files": {},
+        "commands": [],
+        "rules": "",
+        "tools": [],
+        "installedAt": 0,
+        "version": "1.0.0",
+        "author": "فريق صقر كود",
+        "skills": [
+          {
+            "id": "ar-bug-hunter",
+            "name": "Arabic bug hunter",
+            "nameAr": "صائد الأخطاء",
+            "description": "مهارة تصحيح: تعيد إنتاج العطل، تعزل السبب الجذري، تصلحه بأصغر تعديل وتثبته باختبار",
+            "category": "debugging",
+            "tags": [
+              "تصحيح",
+              "أخطاء",
+              "اختبار"
+            ],
+            "version": "1.0.0",
+            "author": "فريق صقر كود",
+            "instructions": "أنت صائد أخطاء. لا تخمّن: أعد إنتاج العطل أولًا ثم أصلحه.\n\n1) اطلب أو استنتج خطوات الإعادة وسجل الخطأ الكامل. شغّل الاختبار أو الأمر الذي يفشل (run_tests أو run_command) وانسخ رسالة الخطأ كما هي.\n2) اقرأ الملفات في مسار الخطأ (read_file وsearch) وحدد السبب الجذري لا العَرَض. اذكر الفرضية بجملة واحدة قبل أي تعديل.\n3) اكتب اختبارًا يفشل بسبب هذا العطل بالذات إن لم يوجد.\n4) عدّل بأصغر تغيير ممكن (edit_file) دون إعادة تنسيق ملفات لا علاقة لها.\n5) أعد تشغيل الاختبار المستهدف ثم المجموعة الكاملة. إن فشل شيء جديد فتراجع وراجع الفرضية.\n6) اختم بثلاثة أسطر: السبب الجذري، ما غُيّر، وكيف تحققت. إن لم تتمكن من الإعادة فقل ذلك صراحة ولا تدّعِ إصلاحًا.\n\nلا تحذف ملفات، ولا تُشغّل أوامر شبكة أو تثبيت خارج المشروع.",
+            "role": "debugger",
+            "permissions": [
+              "list_files",
+              "read_file",
+              "search",
+              "project_search",
+              "git_diff",
+              "git_log",
+              "edit_file",
+              "run_tests",
+              "run_command"
+            ],
+            "risk": "MEDIUM",
+            "changelog": [
+              {
+                "version": "1.0.0",
+                "notes": "الإصدار الأول: حلقة إعادة إنتاج ← سبب جذري ← اختبار ← أصغر إصلاح ← تحقق."
+              }
+            ]
+          }
+        ]
+      },
+      "sha256": "f85781def67476562b78c1a02292f48e44346c010a57e109f40cac94c53315c7"
+    },
+    {
+      "id": "ar-commit-writer",
+      "name": "Arabic commit writer",
+      "nameAr": "كاتب رسائل الإيداع",
+      "description": "مهارة قراءة فقط: تقرأ الفروقات وتقترح رسالة إيداع واضحة بالعربية والإنجليزية بنمط الإيداعات المعتمدة",
+      "author": "فريق صقر كود",
+      "tags": [
+        "git",
+        "إيداع",
+        "توثيق"
+      ],
+      "version": "1.0.0",
+      "skills": 1,
+      "permissions": [
+        "git_status",
+        "git_diff",
+        "git_log",
+        "read_file"
+      ],
+      "changelogUrl": "https://github.com/CTO-DRS/saqr-gallery/blob/main/CHANGELOG.md",
+      "pack": {
+        "saqrpack": 2,
+        "id": "ar-commit-writer",
+        "name": "Arabic commit writer",
+        "nameAr": "كاتب رسائل الإيداع",
+        "description": "مهارة قراءة فقط: تقرأ الفروقات وتقترح رسالة إيداع واضحة بالعربية والإنجليزية بنمط الإيداعات المعتمدة",
+        "template": "",
+        "files": {},
+        "commands": [],
+        "rules": "",
+        "tools": [],
+        "installedAt": 0,
+        "version": "1.0.0",
+        "author": "فريق صقر كود",
+        "skills": [
+          {
+            "id": "ar-commit-writer",
+            "name": "Arabic commit writer",
+            "nameAr": "كاتب رسائل الإيداع",
+            "description": "مهارة قراءة فقط: تقرأ الفروقات وتقترح رسالة إيداع واضحة بالعربية والإنجليزية بنمط الإيداعات المعتمدة",
+            "category": "git",
+            "tags": [
+              "git",
+              "إيداع",
+              "توثيق"
+            ],
+            "version": "1.0.0",
+            "author": "فريق صقر كود",
+            "instructions": "اكتب رسالة إيداع من الفروقات الفعلية فقط.\n\nاقرأ git_status ثم git_diff، وراجع آخر عشرة إيداعات (git_log) لتطابق أسلوب المشروع. لا تذكر شيئًا غير موجود في الفرق.\n\nالصيغة: سطر العنوان بالإنجليزية بصيغة الأمر، أقل من 72 حرفًا، ببادئة نوعية (feat أو fix أو docs أو refactor أو test أو chore). ثم سطر فارغ، ثم فقرة عربية قصيرة تشرح لماذا (لا ماذا). ثم قائمة نقاط للتغييرات الجوهرية. إن كان التغيير يكسر التوافق فأضف سطر BREAKING.\n\nإن احتوى الفرق على أكثر من موضوع واحد فاقترح تقسيمه إلى إيداعات وسمِّ ملفات كل إيداع. لا تنفّذ الإيداع بنفسك: اعرض الرسالة فقط ليوافق المطوّر.\nإن رأيت سرًّا (مفتاح أو كلمة مرور) في الفرق فحذّر منه قبل أي شيء.",
+            "role": "developer",
+            "permissions": [
+              "git_status",
+              "git_diff",
+              "git_log",
+              "read_file"
+            ],
+            "risk": "SAFE",
+            "changelog": [
+              {
+                "version": "1.0.0",
+                "notes": "الإصدار الأول: رسالة ثنائية اللغة مطابقة لأسلوب المشروع، مع اقتراح تقسيم وتحذير من الأسرار."
+              }
+            ]
+          }
+        ]
+      },
+      "sha256": "43a455773ab18a20c1fc10d0e01f33663c940ad3c03fe905119590d49c2e0fed"
+    },
+    {
+      "id": "ar-readme-writer",
+      "name": "Arabic README writer",
+      "nameAr": "كاتب README عربي",
+      "description": "مهارة توثيق: تقرأ المشروع وتكتب README ثنائي اللغة بقسم تشغيل سريع وأمثلة دون اختلاق ميزات",
+      "author": "فريق صقر كود",
+      "tags": [
+        "توثيق",
+        "README",
+        "عربي"
+      ],
+      "version": "1.0.0",
+      "skills": 1,
+      "permissions": [
+        "list_files",
+        "read_file",
+        "search",
+        "project_search",
+        "write_file"
+      ],
+      "changelogUrl": "https://github.com/CTO-DRS/saqr-gallery/blob/main/CHANGELOG.md",
+      "pack": {
+        "saqrpack": 2,
+        "id": "ar-readme-writer",
+        "name": "Arabic README writer",
+        "nameAr": "كاتب README عربي",
+        "description": "مهارة توثيق: تقرأ المشروع وتكتب README ثنائي اللغة بقسم تشغيل سريع وأمثلة دون اختلاق ميزات",
+        "template": "",
+        "files": {},
+        "commands": [],
+        "rules": "",
+        "tools": [],
+        "installedAt": 0,
+        "version": "1.0.0",
+        "author": "فريق صقر كود",
+        "skills": [
+          {
+            "id": "ar-readme-writer",
+            "name": "Arabic README writer",
+            "nameAr": "كاتب README عربي",
+            "description": "مهارة توثيق: تقرأ المشروع وتكتب README ثنائي اللغة بقسم تشغيل سريع وأمثلة دون اختلاق ميزات",
+            "category": "docs",
+            "tags": [
+              "توثيق",
+              "README",
+              "عربي"
+            ],
+            "version": "1.0.0",
+            "author": "فريق صقر كود",
+            "instructions": "اكتب README من الكود الفعلي، لا من التخمين.\n\nاقرأ ملفات الإعداد (package.json أو requirements.txt أو build.gradle.kts) وملف الدخول الرئيسي وأي ملف README موجود. استخرج: ما يفعله المشروع، المتطلبات، أوامر التثبيت والتشغيل والاختبار كما هي في الملفات.\n\nالبنية: عنوان واسم بالعربية والإنجليزية، فقرة تعريف، «تشغيل سريع» بأوامر قابلة للنسخ، بنية المجلدات المختصرة، أمثلة استخدام حقيقية، الترخيص إن وُجد ملفه. اكتب كل قسم بالعربية ثم الإنجليزية، وضع الأوامر في كتل كود بلا ترجمة.\n\nلا تخترع ميزات أو أوامر أو روابط أو شارات. ما لم تجده اكتبه في قائمة «يحتاج استكمال» في آخر الملف. إن وُجد README قديم فاحتفظ بمحتواه الصحيح ولا تحذف قسمًا دون ذكر السبب. اكتب الملف في README.md فقط.",
+            "role": "developer",
+            "permissions": [
+              "list_files",
+              "read_file",
+              "search",
+              "project_search",
+              "write_file"
+            ],
+            "risk": "MEDIUM",
+            "changelog": [
+              {
+                "version": "1.0.0",
+                "notes": "الإصدار الأول: README ثنائي اللغة من ملفات المشروع الفعلية مع قائمة نواقص صريحة."
+              }
+            ]
+          }
+        ]
+      },
+      "sha256": "07f5b8e5ff43af06c4aeaddbfcc8e49e887a992861605822fb43ae5948d8ff8b"
+    },
+    {
+      "id": "ar-security-audit",
+      "name": "Arabic security audit",
+      "nameAr": "تدقيق أمني عربي",
+      "description": "مهارة قراءة فقط: تفحص المشروع بحثًا عن الأسرار والحقن والتبعيات الخطرة وتكتب تقريرًا مرتبًا بالخطورة",
+      "author": "فريق صقر كود",
+      "tags": [
+        "أمان",
+        "تدقيق",
+        "جودة"
+      ],
+      "version": "1.0.0",
+      "skills": 1,
+      "permissions": [
+        "list_files",
+        "read_file",
+        "search",
+        "project_search",
+        "git_log"
+      ],
+      "changelogUrl": "https://github.com/CTO-DRS/saqr-gallery/blob/main/CHANGELOG.md",
+      "pack": {
+        "saqrpack": 2,
+        "id": "ar-security-audit",
+        "name": "Arabic security audit",
+        "nameAr": "تدقيق أمني عربي",
+        "description": "مهارة قراءة فقط: تفحص المشروع بحثًا عن الأسرار والحقن والتبعيات الخطرة وتكتب تقريرًا مرتبًا بالخطورة",
+        "template": "",
+        "files": {},
+        "commands": [],
+        "rules": "",
+        "tools": [],
+        "installedAt": 0,
+        "version": "1.0.0",
+        "author": "فريق صقر كود",
+        "skills": [
+          {
+            "id": "ar-security-audit",
+            "name": "Arabic security audit",
+            "nameAr": "تدقيق أمني عربي",
+            "description": "مهارة قراءة فقط: تفحص المشروع بحثًا عن الأسرار والحقن والتبعيات الخطرة وتكتب تقريرًا مرتبًا بالخطورة",
+            "category": "security",
+            "tags": [
+              "أمان",
+              "تدقيق",
+              "جودة"
+            ],
+            "version": "1.0.0",
+            "author": "فريق صقر كود",
+            "instructions": "تدقيق أمني للقراءة فقط. لا تعدّل أي ملف.\n\nافحص بالترتيب: (1) أسرار في الكود أو الإعدادات أو السجل (git_log): مفاتيح API، كلمات مرور، ملفات keystore أو .env مرفوعة. (2) إدخال المستخدم الذي يصل إلى أوامر الطرفية أو SQL أو HTML أو مسارات الملفات دون تحقق. (3) اتصالات http أو تعطيل التحقق من الشهادات. (4) صلاحيات أوسع من اللازم (أندرويد: exported وusesCleartextTraffic وallowBackup). (5) تبعيات قديمة معروفة الخطر في ملفات الإعداد. (6) تسريب بيانات في السجلات والإشعارات.\n\nالتقرير: جدول بأعمدة الخطورة (حرِجة، عالية، متوسطة، منخفضة) والملف والسطر والوصف والإصلاح المقترح. لا تطبع قيمة أي سر وجدته: اذكر موضعه ونوعه فقط. اختم بأهم ثلاثة إجراءات عاجلة. إن لم تجد شيئًا في محور فاكتب ذلك صراحة ولا تحشُ التقرير.",
+            "role": "security",
+            "permissions": [
+              "list_files",
+              "read_file",
+              "search",
+              "project_search",
+              "git_log"
+            ],
+            "risk": "SAFE",
+            "changelog": [
+              {
+                "version": "1.0.0",
+                "notes": "الإصدار الأول: ستة محاور مع تقرير مرتب بالخطورة ومنع طباعة قيم الأسرار."
+              }
+            ]
+          }
+        ]
+      },
+      "sha256": "826c2ded0472fd6fdc3d9c8781851e122653456d66e59e2d03ac5bee23c678cf"
     }
   ]
 }
