@@ -1,0 +1,28 @@
+name: Validate gallery
+
+on:
+  pull_request:
+    paths:
+      - "gallery.json"
+      - "scripts/validate_gallery.py"
+      - ".github/workflows/validate.yml"
+  push:
+    branches: [main]
+    paths:
+      - "gallery.json"
+      - "scripts/validate_gallery.py"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate gallery.json (same rules as the Saqr Code app)
+        run: python3 scripts/validate_gallery.py gallery.json --print-sha
